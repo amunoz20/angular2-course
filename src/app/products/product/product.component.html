@@ -1,0 +1,19 @@
+<div class="ui card" *ngIf="!!product">
+    <div class="image">
+        <img src="/images/avatar2/large/kristy.png">
+    </div>
+    <div class="content">
+        <a class="header">{{product.name}}</a>
+        <div class="meta">
+            <span class="date"> $ {{product.price}} MXN</span>
+        </div>
+        <div class="description">
+            {{product.description}}
+        </div>
+    </div>
+    <div class="extra content">
+        <button class="ui icon mini red button" (click)="delete()">
+            <i class="trash icon"></i>
+        </button>
+    </div>
+</div>

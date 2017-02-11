@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ProductsComponent } from './products/products.component';
+import { ProductComponent } from './products/product/product.component';
+import { ProductsService } from './products/product.service';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ContextMenuComponent } from './contextMenu/contextMenu.component';
 
@@ -14,6 +16,7 @@ import { ContextMenuComponent } from './contextMenu/contextMenu.component';
     AppComponent,
     HeaderComponent,
     ProductsComponent,
+    ProductComponent,
     CarouselComponent,
     ContextMenuComponent
   ],
@@ -22,7 +25,7 @@ import { ContextMenuComponent } from './contextMenu/contextMenu.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
