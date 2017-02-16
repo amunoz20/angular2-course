@@ -22,6 +22,6 @@ export class ProductsComponent implements OnInit {
     }
 
     private removeProduct(productIndex: number): void {
-        this.products.splice(productIndex);
+        this.products.splice(productIndex, 1);
     }
 }
